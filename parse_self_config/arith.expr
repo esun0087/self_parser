@@ -1,4 +1,4 @@
 root=<arith>
 arith = <add> [magic(加|减, op, default) <add>]
 add = <div> [magic(乘|除,op, default) <div>]
-div = magic('\d+(\.\d{1,10})?', digit,default)
+div = magic('\d+(\.\d{1,10})?' | 'asd', digit,default)

@@ -1,4 +1,4 @@
 root=<weather>
 weather=<date> 天气 <语气词>
-date = magic(今|今天|现在,date,now) | magic(昨天,date,yesterday) | magic(\d{1,8},date,digitDate)
-语气词  = magic(怎么样|如何|怎么,yuqi,空)
+date = magic(今|今天|现在,date,now) | magic(昨天,date,yesterday) | magic('\d{1,8}',date,digitDate)
+语气词  = magic(怎么样|如何|怎么|'[\u4e00-\u9fa5]{1,4}',yuqi,空)
