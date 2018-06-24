@@ -7,3 +7,5 @@
 >>>> a = [x y z] x y  
 >>>> a = [x | y | z] x y  
 >>>> b = <a> x y
+>>>> a = magic(b|c|e, var, norm_value)
+>>>> a = '2232'
