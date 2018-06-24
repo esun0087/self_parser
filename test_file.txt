@@ -1,0 +1,4 @@
+<root_mm>: <magic_text>
+<a>: abcd | de
+<magic_text>:magic(abc|abcd|abcdef, tag, tag_default, tag_assign)
+<test>:abc|abcd|abcdef
