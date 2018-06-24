@@ -5,7 +5,9 @@ import codecs
 
 symbols = ['[', ']', '<', '>', '|', '(', ')', ',']
 
+
 class SemanticParser:
+
     def __init__(self):
         self.d = {}
     def lood_ahead(self,right_expr):
@@ -24,16 +26,19 @@ class SemanticParser:
         token = ''
         block = 0
         for i, c in enumerate(right_expr):
-            if c == '{':
-                block += 1
+            if c == "'":
+                if block == 1:
+                    if token.strip():
+                        token += c
+                        yield token[1:-1], i
+                        block = 0
+                        token = ''
+                        continue
+                else:
+                    block = 1
+            if block:
                 token += c
                 continue
-            if c == ',':
-                if block > 0:
-                    token += c
-                    continue
-            if c == '}':
-                block -= 1
 
             if c not in symbols + list(string.whitespace):
                 token += c
@@ -150,7 +155,12 @@ class SemanticParser:
         return [p for p in parse_ans[0] if type(p) == MagicMatchResult]
 
 
+
+
+
 if __name__ == '__main__':
     # parse_expr_by_token("[[a b] | c <f>] d e | x | p <zz> magic(x c v, aa)")
     get = SemanticParser()
-    get.parse_expr_by_token("a=[magic([123 | 456],a,45)]")
+    for i in get.get_next_token("div = magic('\d+\.\d+|\d+', digit,default)"):
+        print (i)
+    # get.parse_expr_by_token("a=[magic([123 | 456],a,45)]")
