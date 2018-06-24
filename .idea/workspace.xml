@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe44a701-7d07-4c5d-9178-0b9524d4ea5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/parse_self_config/arith.expr" afterPath="$PROJECT_DIR$/parse_self_config/arith.expr" />
-      <change beforePath="$PROJECT_DIR$/parse_self_config/parse_token.py" afterPath="$PROJECT_DIR$/parse_self_config/parse_token.py" />
-      <change beforePath="$PROJECT_DIR$/parse_self_config/weather.expr" afterPath="$PROJECT_DIR$/parse_self_config/weather.expr" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -412,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529825462984</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="测试修改">
+      <created>1529826078237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529826078237</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
