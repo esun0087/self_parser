@@ -14,13 +14,43 @@ class WordType:
 
 
 class WorldToken:
+    def get_word_extend(self):
+        m_n_re  = re.compile(r"{(?P<m>\d*),(?P<n>\d*)}")
+        m_n_group = m_n_re.search(self.value)
+        if m_n_group:
+            m = int(m_n_group.group("m")) if m_n_group.group("m") != "" else 0
+            n = int(m_n_group.group("n")) if m_n_group.group("n") != "" else 0
+
+            re_part = self.value[:m_n_group.start()]
+            if m > 0 and n > 0:
+                self.value_extend = [re.compile("%s{%s,%s}" % (re_part, i, i)) for i in range(m ,n+1)]
+            elif m > 0  and  n == 0:
+                n  = 20
+                self.value_extend = [re.compile("%s{%s,%s}" % (re_part, i, i)) for i in range(m, n + 1)]
+            elif m == 0 and n > 0:
+                self.value_extend = [re.compile("%s{%s,%s}" % (re_part, i, i)) for i in range(m, n + 1)]
+        pass
+
     def __init__(self, v):
         self.value = v
+        self.value_extend = None
         self.re = re.compile(v, re.I)
         self.type = WordType.WORD
+        self.get_word_extend()
+    def parse_extend(self,sent):
+        ans = []
+        for v in self.value_extend:
+            re_ret = v.match(sent)
+            if re_ret:
+                ans.append(((re_ret.group(),), sent[len(re_ret.group()):]))
+            else:
+                ans.append((None, sent))
+        return ans
 
     def parse(self, sent):
         sent = sent.strip()
+        if self.value_extend:
+            return self.parse_extend( sent)
         re_ret = self.re.match(sent)
         if re_ret:
             return [((re_ret.group(),), sent[len(re_ret.group()):])]

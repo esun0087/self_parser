@@ -1,0 +1,2 @@
+root=<season> 的 [magic('[a-zA-Z\u4e00-\u9fa5]{,3}', artist, none)] [比赛]
+season=magic(2018, year, none)
