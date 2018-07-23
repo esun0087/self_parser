@@ -12,7 +12,6 @@ import torch.nn.functional as F
 from word2vec_utils import *
 import numpy
 from sklearn.metrics.pairwise import cosine_similarity
-from torch.autograd import Variable
 
 class CBOW(nn.Module):
 
@@ -86,7 +85,6 @@ def test():
         all_embeddings.append(embedding)
         all_words.append(word)
     all_embeddings = numpy.array(all_embeddings)
-    # words = ["足球", "剑网", "iPhone", "游戏", "编程", "小孩"]
     words = ["羽毛球"]
     for ww in words:
         if ww in word_to_ix:
