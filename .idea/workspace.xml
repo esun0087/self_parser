@@ -2,42 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe44a701-7d07-4c5d-9178-0b9524d4ea5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/dev_pytorch.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/pao_mo_zhi_xia.txt.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/pao_mo_zhi_xia.txt.tag_to_idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/pao_mo_zhi_xia.txt.word_to_idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/test_pytorch.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/test_tmp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/train_pytorch.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/trontagger-0.1.0.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_perceptron/data/zhihu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bisltm_crf/bilstm.epoch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bisltm_crf/bilstm_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bisltm_crf/bilstm_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bisltm_crf/bilstm_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/build_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_model_batch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_tag_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_tagger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_tagger_batch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_use.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/lstm_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/test.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/x.epoch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_segment_pytorch/x_batch.epoch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngram/ngram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngram/ngram_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_word2vec/embedding1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_word2vec/self_train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/self_parser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/self_parser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/average_perceptron/build_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/average_perceptron/build_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/average_perceptron/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/average_perceptron/data/test.txt" afterDir="false" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/self_word2vec/gensim_word2vec.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/self_parser.iml" afterPath="$PROJECT_DIR$/.idea/self_parser.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/embedding1.txt" afterPath="$PROJECT_DIR$/self_word2vec/embedding1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" afterPath="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/self_train.txt" afterPath="$PROJECT_DIR$/self_word2vec/self_train.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" afterPath="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +23,8 @@
       <file leaf-file-name="mini_word2vec_pytorch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+            <state relative-caret-position="109">
+              <caret line="136" column="45" lean-forward="false" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="45" />
               <folding>
                 <element signature="e#226#238#0" expanded="true" />
               </folding>
@@ -60,11 +32,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="self_train.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+      <file leaf-file-name="gensim_word2vec.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/self_word2vec/gensim_word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/torch/nn/modules/module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="490" column="0" lean-forward="false" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loss.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/torch/nn/modules/loss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14">
+              <caret line="745" column="35" lean-forward="false" selection-start-line="745" selection-start-column="35" selection-end-line="745" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="word2vec_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_word2vec/word2vec_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +109,9 @@
       <find>好</find>
       <find>足球</find>
       <find>郭襄</find>
+      <find>羽毛球</find>
+      <find>羽毛球	不错</find>
+      <find>make_context_vector</find>
     </findStrings>
     <replaceStrings>
       <replace>add_global_token</replace>
@@ -119,10 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base_expr/base_type.py" />
-        <option value="$PROJECT_DIR$/base_expr/get_token.py" />
-        <option value="$PROJECT_DIR$/base_expr/expr.py" />
-        <option value="$PROJECT_DIR$/parse_ini/parse_ini.py" />
         <option value="$PROJECT_DIR$/parse_json.py" />
         <option value="$PROJECT_DIR$/parse_self_config/self.expr" />
         <option value="$PROJECT_DIR$/parse_self_config/arith.expt" />
@@ -167,25 +171,41 @@
         <option value="$PROJECT_DIR$/embedding_test/embedding_test.py" />
         <option value="$PROJECT_DIR$/ngram/ngram.py" />
         <option value="$PROJECT_DIR$/ngram/ngram_utils.py" />
+        <option value="$PROJECT_DIR$/self_word2vec/self_train.txt" />
+        <option value="$PROJECT_DIR$/self_word2vec/tri_gram.txt" />
+        <option value="$PROJECT_DIR$/self_word2vec/embedding1.txt" />
+        <option value="$PROJECT_DIR$/self_word2vec/cbow1.py" />
         <option value="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" />
         <option value="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
-        <option value="$PROJECT_DIR$/self_word2vec/self_train.txt" />
+        <option value="$PROJECT_DIR$/self_word2vec/gensim_word2vec.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1924" />
-    <option name="height" value="1007" />
+    <option name="x" value="284" />
+    <option name="y" value="282" />
+    <option name="width" value="1160" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -211,8 +231,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytorch_Chinese_word_segmentation" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -237,8 +257,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.mini_word2vec_pytorch">
-    <configuration name="mini_word2vec_pytorch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="self_parser" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="cbow1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -249,14 +282,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_word2vec/cbow1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="mini_word2vec_pytorch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_word2vec" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ngram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="self_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -267,14 +316,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ngram/ngram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ngram_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="self_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -285,32 +333,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
       <option name="SCRIPT_NAME" value="D:\study\nlp\self_parser\embedding_test\embedding_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ngram_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="self_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ngram" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ngram/ngram_utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="parse_file" type="PythonConfigurationType" factoryName="Python">
-      <module name="self_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -321,14 +350,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
       <option name="SCRIPT_NAME" value="D:\study\nlp\self_parser\old_code\parse_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="word2vec_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="self_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -339,42 +367,32 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="self_parser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="self_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.parse_file" />
-      <item itemvalue="Python.ngram_test" />
-      <item itemvalue="Python.ngram" />
-      <item itemvalue="Python.ngram_utils" />
-      <item itemvalue="Python.mini_word2vec_pytorch" />
-      <item itemvalue="Python.word2vec_utils" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.mini_word2vec_pytorch" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ngram" />
+      <item index="2" class="java.lang.String" itemvalue="Python.parse_file" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ngram_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.word2vec_utils" />
+      <item index="5" class="java.lang.String" itemvalue="Python.cbow1" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Python.mini_word2vec_pytorch" />
-        <item itemvalue="Python.word2vec_utils" />
-        <item itemvalue="Python.ngram" />
-        <item itemvalue="Python.ngram_utils" />
-        <item itemvalue="Python.ngram_test" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.mini_word2vec_pytorch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cbow1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.word2vec_utils" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ngram_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ngram" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -468,27 +486,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1924" height="1007" extended-state="0" />
+    <frame x="284" y="282" width="1160" height="733" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27725366" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39730638" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32932165" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32211" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32996634" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32996634" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20367132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3441034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -550,26 +567,6 @@
           <line>29</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="247" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="250" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/self_word2vec/word2vec_utils.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="254" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -578,7 +575,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="255" />
+      <option name="time" value="257" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -587,21 +584,18 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lstm_segment_tf/lstm_utils.py" />
-    <entry file="file://$PROJECT_DIR$/lstm_segment_tf/lstm_test.py" />
-    <entry file="file://$PROJECT_DIR$/lstm_segment_tf/tf_use.py" />
     <entry file="file://$PROJECT_DIR$/lstm_segment_tf/lstm_seg.py" />
     <entry file="file://$PROJECT_DIR$/average_perceptron/PerceptronTagger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="88" column="24" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="24" />
+          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/AveragedPerceptron.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -615,21 +609,21 @@
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/test_pytorch.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="41" />
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_tagger_batch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_model_batch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -639,49 +633,43 @@
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/build_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/optim/sgd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="50" column="42" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/optim/sgd.py" />
     <entry file="file://$PROJECT_DIR$/parse_self_config/arith.expr">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse_self_config/weather.expr">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse_self_config/expr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse_self_config/get_token.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse_self_config/parse_token.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -692,34 +680,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/test.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_tag_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="407" column="8" selection-start-line="407" selection-start-column="8" selection-end-line="407" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/rnn.py" />
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+          <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bisltm_crf/bilstm_train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="53" />
+          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -739,42 +718,42 @@
     <entry file="file://$PROJECT_DIR$/bisltm_crf/bilstm_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="39" />
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bisltm_crf/bilstm_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="76" column="15" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+          <caret line="76" column="15" lean-forward="false" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/test_tmp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/build_train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/pao_mo_zhi_xia.txt.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -788,110 +767,105 @@
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/train_pytorch.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
-          <caret line="7424" selection-start-line="7424" selection-end-line="7424" />
+          <caret line="7424" column="0" lean-forward="false" selection-start-line="7424" selection-start-column="0" selection-end-line="7424" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ngram/ngram_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="23" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="745" column="57" selection-start-line="745" selection-start-column="12" selection-end-line="745" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1090751487/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="247" column="5" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="1063" selection-start-line="1063" selection-end-line="1063" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/loss.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1090751487/builtins.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/functional.py" />
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/zhihu.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1272" column="17" selection-start-line="1272" selection-start-column="17" selection-end-line="1272" selection-end-column="17" />
+          <caret line="1272" column="17" lean-forward="false" selection-start-line="1272" selection-start-column="17" selection-end-line="1272" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="536" column="5" lean-forward="false" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="5" />
+        </state>
+      </provider>
       <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-2099295" />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="536" column="5" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="5" />
+        <state relative-caret-position="-2099295">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/_tensor_str.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/_tensor_str.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/module.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sklearn/metrics/pairwise.py" />
+    <entry file="file://$PROJECT_DIR$/ngram/ngram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="531" selection-start-line="531" selection-end-line="531" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_file.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sklearn/metrics/pairwise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="881" column="4" selection-start-line="881" selection-start-column="4" selection-end-line="881" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/self_word2vec/embedding1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngram/ngram.py">
+    <entry file="file://$PROJECT_DIR$/self_word2vec/tri_gram.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="490" column="0" lean-forward="false" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_word2vec/cbow1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="72" column="56" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/torch/nn/modules/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="745" column="35" lean-forward="false" selection-start-line="745" selection-start-column="35" selection-end-line="745" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/self_word2vec/word2vec_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="-119">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -900,18 +874,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        <state relative-caret-position="109">
+          <caret line="136" column="45" lean-forward="false" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="45" />
           <folding>
             <element signature="e#226#238#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+    <entry file="file://$PROJECT_DIR$/self_word2vec/gensim_word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

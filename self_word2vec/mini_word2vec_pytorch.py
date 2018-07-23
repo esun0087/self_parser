@@ -12,6 +12,7 @@ import torch.nn.functional as F
 from word2vec_utils import *
 import numpy
 from sklearn.metrics.pairwise import cosine_similarity
+from torch.autograd import Variable
 
 class CBOW(nn.Module):
 
@@ -49,6 +50,9 @@ class CBOW(nn.Module):
             fout.write('%s %s\n' % (w, e))
         fout.close()
 
+    def get_emb(self, ids):
+        return self.embeddings(ids)
+
 # create your model and train.  here are some functions to help you make
 # the data ready for use by your module
 
@@ -70,7 +74,7 @@ def get_min_dis(line, embedding):
     ans.sort(reverse=True)
     return ans[:10]
 
-def test(model):
+def test():
     f = codecs.open("embedding1.txt", "r", "utf-8")
     f.readline()
     all_embeddings = []
@@ -83,8 +87,7 @@ def test(model):
         all_words.append(word)
     all_embeddings = numpy.array(all_embeddings)
     # words = ["足球", "剑网", "iPhone", "游戏", "编程", "小孩"]
-    words = ["苹果", "美国"]
-    model.zero_grad()
+    words = ["羽毛球"]
     for ww in words:
         if ww in word_to_ix:
             wid = word_to_ix[ww]
@@ -97,6 +100,18 @@ def test(model):
         print ("\n\n")
 
 
+def test_for_predict(model):
+    sent = "香港 羽毛球 不错".split()
+    t = get_context(sent, CONTEXT_SIZE, 0)
+    t_ids = torch.tensor([word_to_ix[i] for i in t if i in word_to_ix])
+    model.zero_grad()
+    ret = model(t_ids)
+    ret = ret.squeeze()
+    a = torch.topk(ret, 10)
+    for score, index in zip(a[0], a[1]):
+        print(sent[0], score, idx_to_word[index.item()])
+
+
 if __name__ == '__main__':
 
     train_data = get_train_data()
@@ -107,8 +122,12 @@ if __name__ == '__main__':
     vocab_size = len(word_to_ix)
     data = get_tri_gram(train_data)
     print ("tri gram data", len(data))
+    with codecs.open("tri_gram.txt", "w", "utf-8") as f:
+        for l in data:
+            f.write("\t".join(l[0]) + "\t" + l[1] + "\n")
 
-    loss_func = nn.CrossEntropyLoss()
+
+    loss_func = nn.NLLLoss()
     net = CBOW(embedding_size=EMBEDDING_SIZE, vocab_size=vocab_size)
     optimizer = optim.SGD(net.parameters(), lr=0.01)
 
@@ -128,4 +147,5 @@ if __name__ == '__main__':
         if epoch % 1000 == 0:
             print("epoch", epoch, total_loss)
             net.save_embedding(idx_to_word, "embedding1.txt")
-            test(net)
+            test()
+            # test_for_predict(net)

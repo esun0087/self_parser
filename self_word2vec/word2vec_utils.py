@@ -2,7 +2,7 @@ import codecs
 import re
 
 CONTEXT_SIZE = 5  # 2 words to the left, 2 to the right
-EMBEDDING_SIZE = 256
+EMBEDDING_SIZE = 128
 hanzi = re.compile(r"[\u4e00-\u9fa5]+")
 def get_word_index(train_data):
     w_idx = {}
@@ -23,13 +23,16 @@ def get_train_data():
     print ("get train over", len(data))
     return data
 
+def get_context(sent, c_s, pos):
+    t = []
+    for j in range(-c_s, c_s + 1):
+        if pos + j >= 0 and pos + j < len(sent) and  j != 0:
+            t.append(sent[pos + j])
+    return t
 def get_tri_gram(train_data):
     ans =  []
     for test_sent in train_data:
         for i in range(len(test_sent)):
-            t = []
-            for j in range(-CONTEXT_SIZE, CONTEXT_SIZE+1):
-                if i + j >= 0 and i + j < len(test_sent):
-                    t.append(test_sent[i + j])
+            t = get_context(test_sent, CONTEXT_SIZE, i)
             ans.append((tuple(t), test_sent[i]))
     return ans
