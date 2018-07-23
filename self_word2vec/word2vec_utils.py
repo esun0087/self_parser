@@ -23,16 +23,33 @@ def get_train_data():
     print ("get train over", len(data))
     return data
 
-def get_context(sent, c_s, pos):
+def get_cbow_context(sent, c_s, pos):
     t = []
     for j in range(-c_s, c_s + 1):
         if pos + j >= 0 and pos + j < len(sent) and  j != 0:
             t.append(sent[pos + j])
     return t
-def get_tri_gram(train_data):
+
+def get_skip_context(sent, c_s, pos):
+    t = []
+    for j in range(-c_s, c_s + 1):
+        if pos + j >= 0 and pos + j < len(sent) and  j != 0:
+            t.append(sent[pos + j])
+    return t
+def get_cbow_gram(train_data):
     ans =  []
     for test_sent in train_data:
         for i in range(len(test_sent)):
-            t = get_context(test_sent, CONTEXT_SIZE, i)
+            t = get_cbow_context(test_sent, CONTEXT_SIZE, i)
             ans.append((tuple(t), test_sent[i]))
+    return ans
+
+
+def get_skip_gram(train_data):
+    ans =  []
+    for test_sent in train_data:
+        for i in range(len(test_sent)):
+            t = get_skip_context(test_sent, CONTEXT_SIZE, i)
+            for kk in t:
+                ans.append(((test_sent[i],), kk))
     return ans

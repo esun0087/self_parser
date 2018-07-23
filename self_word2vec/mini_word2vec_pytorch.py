@@ -85,7 +85,7 @@ def test():
         all_embeddings.append(embedding)
         all_words.append(word)
     all_embeddings = numpy.array(all_embeddings)
-    words = ["羽毛球"]
+    words = ["羽毛球", "中国"]
     for ww in words:
         if ww in word_to_ix:
             wid = word_to_ix[ww]
@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
     word_to_ix,idx_to_word = get_word_index(train_data)
     vocab_size = len(word_to_ix)
-    data = get_tri_gram(train_data)
+    data = get_skip_gram(train_data)
     print ("tri gram data", len(data))
     with codecs.open("tri_gram.txt", "w", "utf-8") as f:
         for l in data:
