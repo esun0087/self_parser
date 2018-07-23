@@ -5,6 +5,11 @@
       <sourceFolder url="file://$MODULE_DIR$/parse_self_config" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/parse_ini" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/average_perceptron" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lstm_segment_pytorch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lstm_segment_tf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bisltm_crf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ngram" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/self_word2vec" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
