@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe44a701-7d07-4c5d-9178-0b9524d4ea5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/self_word2vec/c_word2vec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/const.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/train.txt.dict" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/train.txt.prep.train.pt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/valid.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/data/penn/valid.txt.prep.val.pt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/example/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/example/evaluate_ptb.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/example/preprocessing_ptb.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/example/qsub-train.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/example/train_ptb.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/model.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/preprocess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lstm-language-model/train.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/gensim_word2vec.py" afterPath="$PROJECT_DIR$/self_word2vec/gensim_word2vec.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" afterPath="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +34,8 @@
       <file leaf-file-name="mini_word2vec_pytorch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+            <state relative-caret-position="192">
+              <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
               <folding>
                 <element signature="e#226#238#0" expanded="true" />
               </folding>
@@ -28,45 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_word2vec.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/self_word2vec/c_word2vec.py">
+      <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lstm-language-model/data/penn/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/__init__.py">
+      <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lstm-language-model/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_version.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/_version.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#225#236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="self_train.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,11 +66,21 @@
       <file leaf-file-name="word2vec_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_word2vec/word2vec_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="663">
+              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="self_train.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,17 +185,17 @@
         <option value="$PROJECT_DIR$/self_word2vec/tri_gram.txt" />
         <option value="$PROJECT_DIR$/self_word2vec/embedding1.txt" />
         <option value="$PROJECT_DIR$/self_word2vec/cbow1.py" />
-        <option value="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" />
         <option value="$PROJECT_DIR$/self_word2vec/gensim_word2vec.py" />
-        <option value="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
         <option value="$PROJECT_DIR$/self_word2vec/c_word2vec.py" />
+        <option value="$PROJECT_DIR$/self_word2vec/word2vec_utils.py" />
+        <option value="$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="286" />
-    <option name="y" value="280" />
-    <option name="width" value="1360" />
+    <option name="x" value="527" />
+    <option name="y" value="305" />
+    <option name="width" value="1036" />
     <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -215,13 +216,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="self_parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="self_parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="self_parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="self_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="lstm-language-model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="self_parser" type="b2602c69:ProjectViewProjectNode" />
@@ -237,6 +242,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -245,13 +251,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\study\nlp\self_parser\old_code" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangbiao1\pppp\self_parser\lstm-language-model" />
       <recent name="D:\study\nlp\self_parser\average_perceptron\data" />
       <recent name="D:\study\nlp\self_parser\average_perceptron" />
       <recent name="D:\study\nlp\self_parser\base_expr" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\nlp\self_parser\old_code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -266,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.c_word2vec">
+  <component name="RunManager" selected="Python.mini_word2vec_pytorch">
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,9 +400,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.c_word2vec" />
-        <item index="1" class="java.lang.String" itemvalue="Python.gensim_word2vec" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mini_word2vec_pytorch" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mini_word2vec_pytorch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.c_word2vec" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gensim_word2vec" />
         <item index="3" class="java.lang.String" itemvalue="Python.cbow1" />
         <item index="4" class="java.lang.String" itemvalue="Python.word2vec_utils" />
       </list>
@@ -499,29 +506,43 @@
       <option name="project" value="LOCAL" />
       <updated>1532327467926</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="average petron">
+      <created>1532344945554</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532344945554</updated>
+    </task>
+    <task id="LOCAL-00014" summary="average petron">
+      <created>1532347430066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532347430066</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="286" y="280" width="1360" height="733" extended-state="0" />
+    <frame x="527" y="305" width="1036" height="733" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17336309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22843137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3441034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3441034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -584,6 +605,11 @@
           <line>29</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -592,7 +618,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="257" />
+      <option name="time" value="259" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -601,20 +627,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/average_perceptron/data/test_pytorch.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_tagger_batch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lstm_segment_pytorch/lstm_model_batch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -788,14 +800,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average_perceptron/data/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="536" column="5" lean-forward="false" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="5" />
-        </state>
-      </provider>
       <provider editor-type-id="LargeFileEditor">
         <state relative-caret-position="-2099295">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="536" column="5" lean-forward="false" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -835,6 +847,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="490" column="0" lean-forward="false" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -852,10 +865,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/_version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_word2vec/c_word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/self_word2vec/word2vec_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="663">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -864,46 +906,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/self_word2vec/mini_word2vec_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="89" column="23" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state relative-caret-position="192">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
           <folding>
             <element signature="e#226#238#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_word2vec/self_train.txt">
+    <entry file="file://$PROJECT_DIR$/lstm-language-model/data/penn/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/__init__.py">
+    <entry file="file://$PROJECT_DIR$/lstm-language-model/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/word2vec/_version.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#225#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_word2vec/c_word2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
