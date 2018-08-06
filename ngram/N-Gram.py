@@ -6,29 +6,28 @@ from torch.autograd import Variable
 import re
 import codecs
 import pickle
+import random
 from pypinyin import pinyin, lazy_pinyin, Style
 CONTEXT_SIZE = 2
 EMBEDDING_DIM = 20
 # We will use Shakespeare Sonnet 2
 hanzi = re.compile(r"[\u4e00-\u9fa5]+")
-test_sentence = [i.strip() for i in codecs.open("song_name.txt", "r", "utf-8").readlines() if hanzi.match(i.strip())]
+test_sentence = [i.strip() for i in codecs.open("new_song_name.txt", "r", "utf-8").readlines() if hanzi.match(i.strip())]
 
 vocb = set()
 feats = set()
 def get_n_gram( word, n):
     ret = [(w, i) for i, w in enumerate(word)]
     ans = [w for w in word]
-    for i in range(1, n + 1):
+    for j in range(1, n + 1):
         tmp = []
         for w, i in ret:
             if i + 1 < len(word):
                 tmp.append((w + word[i + 1], i + 1))
                 ans.append(w + word[i + 1])
         ret = tmp
-    for i in ans:
-        vocb.add(i)
+    vocb.add(word)
     pinyins = lazy_pinyin(word)
-    # pinyins = []
     return ans + pinyins
 
 def get_tri():
@@ -58,11 +57,12 @@ class NgramModel(nn.Module):
         self.fea_len = fea_len
         self.vocb_size = vocb_size
         self.linear1 = nn.Linear(self.fea_len, 128)
+        self.linear3 = nn.Linear(128, 128)
         self.linear2 = nn.Linear(128, self.vocb_size)
 
     def forward(self, x):
         out = self.linear1(x.view(1,-1))
-        out = F.tanh(out)
+        out = self.linear3(out)
         out = self.linear2(out)
         log_prob = F.log_softmax(out)
         return log_prob
@@ -72,10 +72,22 @@ ngrammodel = NgramModel(len(feat_to_idx), len(word_to_idx))
 criterion = nn.NLLLoss()
 optimizer = optim.Adam(ngrammodel.parameters(), lr=0.01)
 
+def predict(word):
+    with torch.no_grad():
+        feat = [0 for i in range(len(feat_to_idx))]
+        for i in get_n_gram(word, len(word)):
+            if i in feat_to_idx:
+                feat[feat_to_idx[i]] += 1.0
+        feat = torch.tensor(feat)
+        out = ngrammodel(feat)
+        _, predict_label = torch.max(out, 1)
+        predict_word = idx_to_word[predict_label.item()]
+        print(' predict word is {}'.format(predict_word))
 for epoch in range(100):
     print('epoch: {}'.format(epoch + 1))
     print('*' * 10)
     running_loss = 0
+    random.shuffle(trigram)
     for data in trigram:
         word, label = data
         feat = [0 for i in range(len(feat_to_idx))]
@@ -91,21 +103,14 @@ for epoch in range(100):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-    if running_loss / len(word_to_idx) < 0.0001:
+    if running_loss / len(trigram) < 0.00001:
         break
+    predict("菊华台")
+    predict("如果你是我的穿说")
     print('Loss: {:.6f}'.format(running_loss / len(word_to_idx)))
 pickle.dump(word_to_idx,  open("word2idx", 'wb'))
 pickle.dump(idx_to_word,  open("idx2word", 'wb'))
 pickle.dump(feat_to_idx,  open("feat2idx", 'wb'))
 pickle.dump(idx_to_feat,  open("idx2feat", 'wb'))
 torch.save(ngrammodel.state_dict(), "ngrammodel.pt")
-word = "菊台"
-feat = [0 for i in range(len(feat_to_idx))]
-for i in get_n_gram(word, len(word)):
-    if i in feat_to_idx:
-        feat[feat_to_idx[i]] += 1.0
-feat = torch.tensor(feat)
-out = ngrammodel(feat)
-_, predict_label = torch.max(out, 1)
-predict_word = idx_to_word[predict_label.item()]
-print(' predict word is {}'.format(predict_word))
+
