@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe44a701-7d07-4c5d-9178-0b9524d4ea5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ngram/auto_correct.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ngram/clean_word.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ngram/test2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngram/N-Gram.py" afterPath="$PROJECT_DIR$/ngram/N-Gram.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngram/song_name.txt" afterPath="$PROJECT_DIR$/ngram/song_name.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngram/test.py" afterPath="$PROJECT_DIR$/ngram/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -565,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533124655721</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="average petron">
+      <created>1533554081436</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533554081436</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
