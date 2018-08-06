@@ -10,7 +10,6 @@ from pypinyin import pinyin, lazy_pinyin, Style
 hanzi = re.compile(r"[\u4e00-\u9fa5]+")
 test_sentence = [i.strip() for i in codecs.open("song_name.txt", "r", "utf-8").readlines() if hanzi.match(i.strip())]
 
-vocb = set()
 def get_n_gram( word, n):
     ret = [(w, i) for i, w in enumerate(word)]
     ans = [w for w in word]
@@ -21,8 +20,6 @@ def get_n_gram( word, n):
                 tmp.append((w + word[i + 1], i + 1))
                 ans.append(w + word[i + 1])
         ret = tmp
-    for i in ans:
-        vocb.add(i)
     pinyins = lazy_pinyin(word)
     # pinyins = []
     return ans + pinyins
@@ -40,11 +37,12 @@ class NgramModel(nn.Module):
         self.fea_len = fea_len
         self.vocb_size = vocb_size
         self.linear1 = nn.Linear(self.fea_len, 128)
+        self.linear3 = nn.Linear(128, 128)
         self.linear2 = nn.Linear(128, self.vocb_size)
 
     def forward(self, x):
         out = self.linear1(x.view(1,-1))
-        out = F.tanh(out)
+        out = self.linear3(out)
         out = self.linear2(out)
         log_prob = F.log_softmax(out)
         return log_prob
@@ -54,13 +52,17 @@ ngrammodel.load_state_dict(torch.load("ngrammodel.pt"))
 pickle.dump(feat_to_idx,  open("feat2idx", 'wb'))
 pickle.dump(idx_to_feat,  open("idx2feat", 'wb'))
 torch.save(ngrammodel.state_dict(), "ngrammodel.pt")
-word = "黑赛有默"
+word = "如果你是我的穿说"
 feat = [0 for i in range(len(feat_to_idx))]
 for i in get_n_gram(word, len(word)):
     if i in feat_to_idx:
         feat[feat_to_idx[i]] += 1.0
 feat = torch.tensor(feat)
 out = ngrammodel(feat)
-_, predict_label = torch.max(out, 1)
-predict_word = idx_to_word[predict_label.item()]
-print(' predict word is {}'.format(predict_word))
+out = [(i, j) for i,j in zip(out[0], range(len(out[0])))]
+out = sorted(out, reverse= True)
+for i,j in out[:10]:
+    print (idx_to_word[j], i.item())
+# _, predict_label = torch.max(out, 1)
+# predict_word = idx_to_word[predict_label.item()]
+# print(' predict word is {}'.format(predict_word))
