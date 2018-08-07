@@ -69,7 +69,6 @@ def predict(word):
             if i in ngram_feat_to_idx:
                 ngram_feat[ngram_feat_to_idx[i]] += 1.0
         for i in get_pinyin_feat(word):
-            print(i)
 
             if i in pinyin_feat_to_idx:
                 pinyin_feat[pinyin_feat_to_idx[i]] += 1.0
@@ -80,8 +79,8 @@ def predict(word):
         predict_word = idx_to_word[predict_label.item()]
         print(' predict word is {}'.format(predict_word))
 
-# predict("菊华台")
+predict("菊华台")
 # predict("让心二圈起你")
 # predict("大男人晓女孩")
 # predict("决战前")
-predict("寄居写")
+predict("许文强")
